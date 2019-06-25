@@ -59,6 +59,7 @@ type User struct {
 	ReposURL          *string `json:"repos_url,omitempty"`
 	StarredURL        *string `json:"starred_url,omitempty"`
 	SubscriptionsURL  *string `json:"subscriptions_url,omitempty"`
+	LdapDn            *string `json:"ldap_dn"`
 
 	// TextMatches is only populated from search results that request text matches
 	// See: search.go and https://developer.github.com/v3/search/#text-match-metadata
